@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GoodsCategory" targetNamespace="http://tempuri.org/GoodsCategory.xsd" xmlns:mstns="http://tempuri.org/GoodsCategory.xsd" xmlns="http://tempuri.org/GoodsCategory.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ShopConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ShopConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ShopManagementSystem.Properties.Settings.GlobalReference.Default.ShopConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GoodsCategoryTableAdapter" GeneratorDataComponentClassName="GoodsCategoryTableAdapter" Name="GoodsCategory" UserDataComponentName="GoodsCategoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ShopConnectionString (Settings)" DbObjectName="Shop.dbo.GoodsCategory" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Category FROM dbo.GoodsCategory</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Category" DataSetColumn="Category" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GoodsCategory" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="GoodsCategory" msprop:Generator_UserDSName="GoodsCategory">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GoodsCategory" msprop:Generator_TableClassName="GoodsCategoryDataTable" msprop:Generator_TableVarName="tableGoodsCategory" msprop:Generator_TablePropName="_GoodsCategory" msprop:Generator_RowDeletingName="GoodsCategoryRowDeleting" msprop:Generator_RowChangingName="GoodsCategoryRowChanging" msprop:Generator_RowEvHandlerName="GoodsCategoryRowChangeEventHandler" msprop:Generator_RowDeletedName="GoodsCategoryRowDeleted" msprop:Generator_UserTableName="GoodsCategory" msprop:Generator_RowChangedName="GoodsCategoryRowChanged" msprop:Generator_RowEvArgName="GoodsCategoryRowChangeEvent" msprop:Generator_RowClassName="GoodsCategoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" msprop:Generator_UserColumnName="Category" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

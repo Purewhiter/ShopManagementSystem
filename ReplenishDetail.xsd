@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReplenishDetail" targetNamespace="http://tempuri.org/ReplenishDetail.xsd" xmlns:mstns="http://tempuri.org/ReplenishDetail.xsd" xmlns="http://tempuri.org/ReplenishDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ShopConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ShopConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ShopManagementSystem.Properties.Settings.GlobalReference.Default.ShopConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ReplenishDetailTableAdapter" GeneratorDataComponentClassName="ReplenishDetailTableAdapter" Name="ReplenishDetail" UserDataComponentName="ReplenishDetailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ShopConnectionString (Settings)" DbObjectName="Shop.dbo.ReplenishDetail" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Rpno, Gno, Gname, SpName, CostPrice, RpNum, TotalPay, RpTime, ExpirDate, EmpName, RpRemark FROM dbo.ReplenishDetail</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Rpno" DataSetColumn="Rpno" />
+              <Mapping SourceColumn="Gno" DataSetColumn="Gno" />
+              <Mapping SourceColumn="Gname" DataSetColumn="Gname" />
+              <Mapping SourceColumn="SpName" DataSetColumn="SpName" />
+              <Mapping SourceColumn="CostPrice" DataSetColumn="CostPrice" />
+              <Mapping SourceColumn="RpNum" DataSetColumn="RpNum" />
+              <Mapping SourceColumn="TotalPay" DataSetColumn="TotalPay" />
+              <Mapping SourceColumn="RpTime" DataSetColumn="RpTime" />
+              <Mapping SourceColumn="ExpirDate" DataSetColumn="ExpirDate" />
+              <Mapping SourceColumn="EmpName" DataSetColumn="EmpName" />
+              <Mapping SourceColumn="RpRemark" DataSetColumn="RpRemark" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReplenishDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ReplenishDetail" msprop:Generator_UserDSName="ReplenishDetail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReplenishDetail" msprop:Generator_TableClassName="ReplenishDetailDataTable" msprop:Generator_TableVarName="tableReplenishDetail" msprop:Generator_TablePropName="_ReplenishDetail" msprop:Generator_RowDeletingName="ReplenishDetailRowDeleting" msprop:Generator_RowChangingName="ReplenishDetailRowChanging" msprop:Generator_RowEvHandlerName="ReplenishDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="ReplenishDetailRowDeleted" msprop:Generator_UserTableName="ReplenishDetail" msprop:Generator_RowChangedName="ReplenishDetailRowChanged" msprop:Generator_RowEvArgName="ReplenishDetailRowChangeEvent" msprop:Generator_RowClassName="ReplenishDetailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Rpno" msprop:Generator_ColumnVarNameInTable="columnRpno" msprop:Generator_ColumnPropNameInRow="Rpno" msprop:Generator_ColumnPropNameInTable="RpnoColumn" msprop:Generator_UserColumnName="Rpno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gno" msprop:Generator_ColumnVarNameInTable="columnGno" msprop:Generator_ColumnPropNameInRow="Gno" msprop:Generator_ColumnPropNameInTable="GnoColumn" msprop:Generator_UserColumnName="Gno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gname" msprop:Generator_ColumnVarNameInTable="columnGname" msprop:Generator_ColumnPropNameInRow="Gname" msprop:Generator_ColumnPropNameInTable="GnameColumn" msprop:Generator_UserColumnName="Gname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SpName" msprop:Generator_ColumnVarNameInTable="columnSpName" msprop:Generator_ColumnPropNameInRow="SpName" msprop:Generator_ColumnPropNameInTable="SpNameColumn" msprop:Generator_UserColumnName="SpName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CostPrice" msprop:Generator_ColumnVarNameInTable="columnCostPrice" msprop:Generator_ColumnPropNameInRow="CostPrice" msprop:Generator_ColumnPropNameInTable="CostPriceColumn" msprop:Generator_UserColumnName="CostPrice" type="xs:float" minOccurs="0" />
+              <xs:element name="RpNum" msprop:Generator_ColumnVarNameInTable="columnRpNum" msprop:Generator_ColumnPropNameInRow="RpNum" msprop:Generator_ColumnPropNameInTable="RpNumColumn" msprop:Generator_UserColumnName="RpNum" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalPay" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalPay" msprop:Generator_ColumnPropNameInRow="TotalPay" msprop:Generator_ColumnPropNameInTable="TotalPayColumn" msprop:Generator_UserColumnName="TotalPay" type="xs:float" minOccurs="0" />
+              <xs:element name="RpTime" msprop:Generator_ColumnVarNameInTable="columnRpTime" msprop:Generator_ColumnPropNameInRow="RpTime" msprop:Generator_ColumnPropNameInTable="RpTimeColumn" msprop:Generator_UserColumnName="RpTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ExpirDate" msprop:Generator_ColumnVarNameInTable="columnExpirDate" msprop:Generator_ColumnPropNameInRow="ExpirDate" msprop:Generator_ColumnPropNameInTable="ExpirDateColumn" msprop:Generator_UserColumnName="ExpirDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EmpName" msprop:Generator_ColumnVarNameInTable="columnEmpName" msprop:Generator_ColumnPropNameInRow="EmpName" msprop:Generator_ColumnPropNameInTable="EmpNameColumn" msprop:Generator_UserColumnName="EmpName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RpRemark" msprop:Generator_ColumnVarNameInTable="columnRpRemark" msprop:Generator_ColumnPropNameInRow="RpRemark" msprop:Generator_ColumnPropNameInTable="RpRemarkColumn" msprop:Generator_UserColumnName="RpRemark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ReplenishDetail" />
+      <xs:field xpath="mstns:Rpno" />
+      <xs:field xpath="mstns:Gno" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

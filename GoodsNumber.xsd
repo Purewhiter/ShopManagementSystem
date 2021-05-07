@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GoodsNumber" targetNamespace="http://tempuri.org/GoodsNumber.xsd" xmlns:mstns="http://tempuri.org/GoodsNumber.xsd" xmlns="http://tempuri.org/GoodsNumber.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ShopConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ShopConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ShopManagementSystem.Properties.Settings.GlobalReference.Default.ShopConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GoodsNumberTableAdapter" GeneratorDataComponentClassName="GoodsNumberTableAdapter" Name="GoodsNumber" UserDataComponentName="GoodsNumberTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ShopConnectionString (Settings)" DbObjectName="Shop.dbo.GoodsNumber" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Gno, Gname, Category, GoodsNum FROM dbo.GoodsNumber</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Gno" DataSetColumn="Gno" />
+              <Mapping SourceColumn="Gname" DataSetColumn="Gname" />
+              <Mapping SourceColumn="Category" DataSetColumn="Category" />
+              <Mapping SourceColumn="GoodsNum" DataSetColumn="GoodsNum" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GoodsNumber" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="GoodsNumber" msprop:Generator_UserDSName="GoodsNumber">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GoodsNumber" msprop:Generator_TableClassName="GoodsNumberDataTable" msprop:Generator_TableVarName="tableGoodsNumber" msprop:Generator_TablePropName="_GoodsNumber" msprop:Generator_RowDeletingName="GoodsNumberRowDeleting" msprop:Generator_RowChangingName="GoodsNumberRowChanging" msprop:Generator_RowEvHandlerName="GoodsNumberRowChangeEventHandler" msprop:Generator_RowDeletedName="GoodsNumberRowDeleted" msprop:Generator_UserTableName="GoodsNumber" msprop:Generator_RowChangedName="GoodsNumberRowChanged" msprop:Generator_RowEvArgName="GoodsNumberRowChangeEvent" msprop:Generator_RowClassName="GoodsNumberRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Gno" msprop:Generator_ColumnVarNameInTable="columnGno" msprop:Generator_ColumnPropNameInRow="Gno" msprop:Generator_ColumnPropNameInTable="GnoColumn" msprop:Generator_UserColumnName="Gno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gname" msprop:Generator_ColumnVarNameInTable="columnGname" msprop:Generator_ColumnPropNameInRow="Gname" msprop:Generator_ColumnPropNameInTable="GnameColumn" msprop:Generator_UserColumnName="Gname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" msprop:Generator_UserColumnName="Category" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GoodsNum" msprop:Generator_ColumnVarNameInTable="columnGoodsNum" msprop:Generator_ColumnPropNameInRow="GoodsNum" msprop:Generator_ColumnPropNameInTable="GoodsNumColumn" msprop:Generator_UserColumnName="GoodsNum" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
