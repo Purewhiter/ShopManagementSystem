@@ -32,20 +32,20 @@ namespace ShopManagementSystem
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReplenishForm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.shopDataSet2 = new ShopManagementSystem.ShopDataSet2();
-            this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.supplierTableAdapter = new ShopManagementSystem.ShopDataSet2TableAdapters.SupplierTableAdapter();
             this.spIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.spNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.spDirectorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.spPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.spAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.spRemarkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.shopDataSet2 = new ShopManagementSystem.ShopDataSet2();
+            this.supplierTableAdapter = new ShopManagementSystem.ShopDataSet2TableAdapters.SupplierTableAdapter();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -60,15 +60,21 @@ namespace ShopManagementSystem
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.刷新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button3 = new System.Windows.Forms.Button();
-            this.goodsListBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.goodsListTableAdapter = new ShopManagementSystem.ShopDataSet2TableAdapters.GoodsListTableAdapter();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.查看已有商品清单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button4 = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.supplierBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.shopDataSet3 = new ShopManagementSystem.ShopDataSet3();
+            this.button8 = new System.Windows.Forms.Button();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -76,24 +82,10 @@ namespace ShopManagementSystem
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.查看已有商品清单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查看库存ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.button8 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.replenishGoodsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.replenishGoodsTableAdapter = new ShopManagementSystem.ShopDataSet2TableAdapters.ReplenishGoodsTableAdapter();
-            this.replenishDetail = new ShopManagementSystem.ReplenishDetail();
-            this.replenishDetailBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.replenishDetailTableAdapter = new ShopManagementSystem.ReplenishDetailTableAdapters.ReplenishDetailTableAdapter();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.rpnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -106,28 +98,36 @@ namespace ShopManagementSystem
             this.expirDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.empNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rpRemarkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.shopDataSet3 = new ShopManagementSystem.ShopDataSet3();
-            this.supplierBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.replenishDetailBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.replenishDetail = new ShopManagementSystem.ReplenishDetail();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.刷新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.goodsListBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.goodsListTableAdapter = new ShopManagementSystem.ShopDataSet2TableAdapters.GoodsListTableAdapter();
+            this.replenishGoodsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.replenishGoodsTableAdapter = new ShopManagementSystem.ShopDataSet2TableAdapters.ReplenishGoodsTableAdapter();
+            this.replenishDetailTableAdapter = new ShopManagementSystem.ReplenishDetailTableAdapters.ReplenishDetailTableAdapter();
             this.supplierTableAdapter1 = new ShopManagementSystem.ShopDataSet3TableAdapters.SupplierTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shopDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shopDataSet2)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shopDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.menuStrip2.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.replenishDetailBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.replenishDetail)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.goodsListBindingSource)).BeginInit();
-            this.menuStrip2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.replenishGoodsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.replenishDetail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.replenishDetailBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shopDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -153,20 +153,6 @@ namespace ShopManagementSystem
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.Size = new System.Drawing.Size(1075, 445);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // shopDataSet2
-            // 
-            this.shopDataSet2.DataSetName = "ShopDataSet2";
-            this.shopDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // supplierBindingSource
-            // 
-            this.supplierBindingSource.DataMember = "Supplier";
-            this.supplierBindingSource.DataSource = this.shopDataSet2;
-            // 
-            // supplierTableAdapter
-            // 
-            this.supplierTableAdapter.ClearBeforeFill = true;
             // 
             // spIDDataGridViewTextBoxColumn
             // 
@@ -215,6 +201,20 @@ namespace ShopManagementSystem
             this.spRemarkDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.spRemarkDataGridViewTextBoxColumn.Name = "spRemarkDataGridViewTextBoxColumn";
             this.spRemarkDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // supplierBindingSource
+            // 
+            this.supplierBindingSource.DataMember = "Supplier";
+            this.supplierBindingSource.DataSource = this.shopDataSet2;
+            // 
+            // shopDataSet2
+            // 
+            this.shopDataSet2.DataSetName = "ShopDataSet2";
+            this.shopDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // supplierTableAdapter
+            // 
+            this.supplierTableAdapter.ClearBeforeFill = true;
             // 
             // tabControl1
             // 
@@ -269,44 +269,25 @@ namespace ShopManagementSystem
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "添加/修改供应商";
             // 
-            // imageList1
+            // button4
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "分析.png");
-            this.imageList1.Images.SetKeyName(1, "库存.png");
-            this.imageList1.Images.SetKeyName(2, "进货.png");
+            this.button4.Location = new System.Drawing.Point(184, 239);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(163, 48);
+            this.button4.TabIndex = 29;
+            this.button4.Text = "读取选中行数据";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // tabPage3
+            // button3
             // 
-            this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage3.Controls.Add(this.comboBox1);
-            this.tabPage3.Controls.Add(this.button8);
-            this.tabPage3.Controls.Add(this.dateTimePicker2);
-            this.tabPage3.Controls.Add(this.dateTimePicker1);
-            this.tabPage3.Controls.Add(this.button7);
-            this.tabPage3.Controls.Add(this.button6);
-            this.tabPage3.Controls.Add(this.button5);
-            this.tabPage3.Controls.Add(this.dataGridView2);
-            this.tabPage3.Controls.Add(this.textBox15);
-            this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.label13);
-            this.tabPage3.Controls.Add(this.label14);
-            this.tabPage3.Controls.Add(this.textBox7);
-            this.tabPage3.Controls.Add(this.textBox8);
-            this.tabPage3.Controls.Add(this.textBox11);
-            this.tabPage3.Controls.Add(this.label7);
-            this.tabPage3.Controls.Add(this.label8);
-            this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Controls.Add(this.menuStrip2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 28);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1081, 451);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "采购进货";
-            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            this.button3.Location = new System.Drawing.Point(522, 317);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(90, 45);
+            this.button3.TabIndex = 28;
+            this.button3.Text = "修改";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -425,80 +406,159 @@ namespace ShopManagementSystem
             this.label1.TabIndex = 14;
             this.label1.Text = "供应商ID：";
             // 
-            // menuStrip1
+            // tabPage3
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.刷新ToolStripMenuItem,
-            this.退出ToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1089, 28);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage3.Controls.Add(this.comboBox1);
+            this.tabPage3.Controls.Add(this.button8);
+            this.tabPage3.Controls.Add(this.dateTimePicker2);
+            this.tabPage3.Controls.Add(this.dateTimePicker1);
+            this.tabPage3.Controls.Add(this.button7);
+            this.tabPage3.Controls.Add(this.button6);
+            this.tabPage3.Controls.Add(this.button5);
+            this.tabPage3.Controls.Add(this.dataGridView2);
+            this.tabPage3.Controls.Add(this.textBox15);
+            this.tabPage3.Controls.Add(this.label15);
+            this.tabPage3.Controls.Add(this.label13);
+            this.tabPage3.Controls.Add(this.label14);
+            this.tabPage3.Controls.Add(this.textBox7);
+            this.tabPage3.Controls.Add(this.textBox8);
+            this.tabPage3.Controls.Add(this.textBox11);
+            this.tabPage3.Controls.Add(this.label7);
+            this.tabPage3.Controls.Add(this.label8);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Controls.Add(this.menuStrip2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 28);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1081, 451);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "采购进货";
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
-            // 刷新ToolStripMenuItem
+            // comboBox1
             // 
-            this.刷新ToolStripMenuItem.Name = "刷新ToolStripMenuItem";
-            this.刷新ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
-            this.刷新ToolStripMenuItem.Text = "刷新";
-            this.刷新ToolStripMenuItem.Click += new System.EventHandler(this.刷新ToolStripMenuItem_Click);
+            this.comboBox1.DataSource = this.supplierBindingSource1;
+            this.comboBox1.DisplayMember = "SpName";
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(471, 50);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(172, 26);
+            this.comboBox1.TabIndex = 51;
+            this.comboBox1.ValueMember = "SpName";
             // 
-            // 退出ToolStripMenuItem
+            // supplierBindingSource1
             // 
-            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
-            this.退出ToolStripMenuItem.Text = "退出";
-            this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
+            this.supplierBindingSource1.DataMember = "Supplier";
+            this.supplierBindingSource1.DataSource = this.shopDataSet3;
             // 
-            // button3
+            // shopDataSet3
             // 
-            this.button3.Location = new System.Drawing.Point(522, 317);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 45);
-            this.button3.TabIndex = 28;
-            this.button3.Text = "修改";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.shopDataSet3.DataSetName = "ShopDataSet3";
+            this.shopDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // goodsListBindingSource
+            // button8
             // 
-            this.goodsListBindingSource.DataMember = "GoodsList";
-            this.goodsListBindingSource.DataSource = this.shopDataSet2;
+            this.button8.Location = new System.Drawing.Point(739, 220);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(89, 38);
+            this.button8.TabIndex = 50;
+            this.button8.Text = "删除";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // goodsListTableAdapter
+            // dateTimePicker2
             // 
-            this.goodsListTableAdapter.ClearBeforeFill = true;
+            this.dateTimePicker2.Location = new System.Drawing.Point(471, 172);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(174, 28);
+            this.dateTimePicker2.TabIndex = 49;
             // 
-            // menuStrip2
+            // dateTimePicker1
             // 
-            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.查看已有商品清单ToolStripMenuItem,
-            this.查看库存ToolStripMenuItem});
-            this.menuStrip2.Location = new System.Drawing.Point(3, 3);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(1075, 30);
-            this.menuStrip2.TabIndex = 0;
-            this.menuStrip2.Text = "menuStrip2";
+            this.dateTimePicker1.Location = new System.Drawing.Point(122, 168);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(172, 28);
+            this.dateTimePicker1.TabIndex = 48;
             // 
-            // 查看已有商品清单ToolStripMenuItem
+            // button7
             // 
-            this.查看已有商品清单ToolStripMenuItem.Name = "查看已有商品清单ToolStripMenuItem";
-            this.查看已有商品清单ToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
-            this.查看已有商品清单ToolStripMenuItem.Text = "查看商品清单";
-            this.查看已有商品清单ToolStripMenuItem.Click += new System.EventHandler(this.查看已有商品清单ToolStripMenuItem_Click);
+            this.button7.Font = new System.Drawing.Font("宋体", 9F);
+            this.button7.Location = new System.Drawing.Point(853, 220);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(89, 38);
+            this.button7.TabIndex = 47;
+            this.button7.Text = "确认进货";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button4
+            // button6
             // 
-            this.button4.Location = new System.Drawing.Point(184, 239);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(163, 48);
-            this.button4.TabIndex = 29;
-            this.button4.Text = "读取选中行数据";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button6.Location = new System.Drawing.Point(853, 158);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(89, 38);
+            this.button6.TabIndex = 46;
+            this.button6.Text = "取消";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(739, 158);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(89, 38);
+            this.button5.TabIndex = 45;
+            this.button5.Text = "添加";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 270);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 27;
+            this.dataGridView2.Size = new System.Drawing.Size(1075, 178);
+            this.dataGridView2.TabIndex = 44;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(756, 50);
+            this.textBox15.Multiline = true;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(157, 86);
+            this.textBox15.TabIndex = 43;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(700, 59);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(66, 19);
+            this.label15.TabIndex = 42;
+            this.label15.Text = "备注：";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(378, 176);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(104, 19);
+            this.label13.TabIndex = 39;
+            this.label13.Text = "过期时间：";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(25, 172);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(104, 19);
+            this.label14.TabIndex = 38;
+            this.label14.Text = "进货时间：";
             // 
             // textBox7
             // 
@@ -560,82 +620,24 @@ namespace ShopManagementSystem
             this.label11.TabIndex = 27;
             this.label11.Text = "商品编号：";
             // 
-            // label13
+            // menuStrip2
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(378, 176);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(104, 19);
-            this.label13.TabIndex = 39;
-            this.label13.Text = "过期时间：";
+            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.查看已有商品清单ToolStripMenuItem,
+            this.查看库存ToolStripMenuItem});
+            this.menuStrip2.Location = new System.Drawing.Point(3, 3);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(1075, 28);
+            this.menuStrip2.TabIndex = 0;
+            this.menuStrip2.Text = "menuStrip2";
             // 
-            // label14
+            // 查看已有商品清单ToolStripMenuItem
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(25, 172);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(104, 19);
-            this.label14.TabIndex = 38;
-            this.label14.Text = "进货时间：";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(756, 50);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(157, 86);
-            this.textBox15.TabIndex = 43;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(700, 59);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(66, 19);
-            this.label15.TabIndex = 42;
-            this.label15.Text = "备注：";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 270);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 27;
-            this.dataGridView2.Size = new System.Drawing.Size(1075, 178);
-            this.dataGridView2.TabIndex = 44;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(739, 158);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(89, 38);
-            this.button5.TabIndex = 45;
-            this.button5.Text = "添加";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(853, 158);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(89, 38);
-            this.button6.TabIndex = 46;
-            this.button6.Text = "取消";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("宋体", 9F);
-            this.button7.Location = new System.Drawing.Point(853, 220);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(89, 38);
-            this.button7.TabIndex = 47;
-            this.button7.Text = "确认进货";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.查看已有商品清单ToolStripMenuItem.Name = "查看已有商品清单ToolStripMenuItem";
+            this.查看已有商品清单ToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
+            this.查看已有商品清单ToolStripMenuItem.Text = "查看商品清单";
+            this.查看已有商品清单ToolStripMenuItem.Click += new System.EventHandler(this.查看已有商品清单ToolStripMenuItem_Click);
             // 
             // 查看库存ToolStripMenuItem
             // 
@@ -643,30 +645,6 @@ namespace ShopManagementSystem
             this.查看库存ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.查看库存ToolStripMenuItem.Text = "查看库存";
             this.查看库存ToolStripMenuItem.Click += new System.EventHandler(this.查看库存ToolStripMenuItem_Click);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(122, 168);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(172, 28);
-            this.dateTimePicker1.TabIndex = 48;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(471, 172);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(174, 28);
-            this.dateTimePicker2.TabIndex = 49;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(739, 220);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(89, 38);
-            this.button8.TabIndex = 50;
-            this.button8.Text = "删除";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // tabPage4
             // 
@@ -677,29 +655,6 @@ namespace ShopManagementSystem
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "进货记录";
             this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // replenishGoodsBindingSource
-            // 
-            this.replenishGoodsBindingSource.DataMember = "ReplenishGoods";
-            this.replenishGoodsBindingSource.DataSource = this.shopDataSet2;
-            // 
-            // replenishGoodsTableAdapter
-            // 
-            this.replenishGoodsTableAdapter.ClearBeforeFill = true;
-            // 
-            // replenishDetail
-            // 
-            this.replenishDetail.DataSetName = "ReplenishDetail";
-            this.replenishDetail.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // replenishDetailBindingSource
-            // 
-            this.replenishDetailBindingSource.DataMember = "ReplenishDetail";
-            this.replenishDetailBindingSource.DataSource = this.replenishDetail;
-            // 
-            // replenishDetailTableAdapter
-            // 
-            this.replenishDetailTableAdapter.ClearBeforeFill = true;
             // 
             // dataGridView3
             // 
@@ -805,27 +760,72 @@ namespace ShopManagementSystem
             this.rpRemarkDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.rpRemarkDataGridViewTextBoxColumn.Name = "rpRemarkDataGridViewTextBoxColumn";
             // 
-            // comboBox1
+            // replenishDetailBindingSource
             // 
-            this.comboBox1.DataSource = this.supplierBindingSource1;
-            this.comboBox1.DisplayMember = "SpName";
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(471, 50);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(172, 26);
-            this.comboBox1.TabIndex = 51;
-            this.comboBox1.ValueMember = "SpName";
+            this.replenishDetailBindingSource.DataMember = "ReplenishDetail";
+            this.replenishDetailBindingSource.DataSource = this.replenishDetail;
             // 
-            // shopDataSet3
+            // replenishDetail
             // 
-            this.shopDataSet3.DataSetName = "ShopDataSet3";
-            this.shopDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.replenishDetail.DataSetName = "ReplenishDetail";
+            this.replenishDetail.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // supplierBindingSource1
+            // imageList1
             // 
-            this.supplierBindingSource1.DataMember = "Supplier";
-            this.supplierBindingSource1.DataSource = this.shopDataSet3;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "分析.png");
+            this.imageList1.Images.SetKeyName(1, "库存.png");
+            this.imageList1.Images.SetKeyName(2, "进货.png");
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.刷新ToolStripMenuItem,
+            this.退出ToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1089, 28);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // 刷新ToolStripMenuItem
+            // 
+            this.刷新ToolStripMenuItem.Name = "刷新ToolStripMenuItem";
+            this.刷新ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.刷新ToolStripMenuItem.Text = "刷新";
+            this.刷新ToolStripMenuItem.Click += new System.EventHandler(this.刷新ToolStripMenuItem_Click);
+            // 
+            // 退出ToolStripMenuItem
+            // 
+            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.退出ToolStripMenuItem.Text = "退出";
+            this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
+            // 
+            // goodsListBindingSource
+            // 
+            this.goodsListBindingSource.DataMember = "GoodsList";
+            this.goodsListBindingSource.DataSource = this.shopDataSet2;
+            // 
+            // goodsListTableAdapter
+            // 
+            this.goodsListTableAdapter.ClearBeforeFill = true;
+            // 
+            // replenishGoodsBindingSource
+            // 
+            this.replenishGoodsBindingSource.DataMember = "ReplenishGoods";
+            this.replenishGoodsBindingSource.DataSource = this.shopDataSet2;
+            // 
+            // replenishGoodsTableAdapter
+            // 
+            this.replenishGoodsTableAdapter.ClearBeforeFill = true;
+            // 
+            // replenishDetailTableAdapter
+            // 
+            this.replenishDetailTableAdapter.ClearBeforeFill = true;
             // 
             // supplierTableAdapter1
             // 
@@ -838,31 +838,33 @@ namespace ShopManagementSystem
             this.ClientSize = new System.Drawing.Size(1089, 511);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReplenishForm";
             this.Text = "Replenish";
             this.Load += new System.EventHandler(this.ReplenishForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shopDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shopDataSet2)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shopDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.replenishDetailBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.replenishDetail)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.goodsListBindingSource)).EndInit();
-            this.menuStrip2.ResumeLayout(false);
-            this.menuStrip2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.replenishGoodsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.replenishDetail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.replenishDetailBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shopDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

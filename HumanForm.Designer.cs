@@ -30,11 +30,16 @@ namespace ShopManagementSystem
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HumanForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.添加员工ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.删除员工ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.刷新F5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.清空PToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.退出QToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shopDataSet = new ShopManagementSystem.ShopDataSet();
             this.employInfoTableAdapter = new ShopManagementSystem.ShopDataSetTableAdapters.EmployInfoTableAdapter();
@@ -52,14 +57,6 @@ namespace ShopManagementSystem
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.清空PToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.shopDataSet1 = new ShopManagementSystem.ShopDataSet1();
             this.employInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -123,6 +120,33 @@ namespace ShopManagementSystem
             this.刷新F5ToolStripMenuItem.Text = "刷新(&F)";
             this.刷新F5ToolStripMenuItem.Click += new System.EventHandler(this.刷新F5ToolStripMenuItem_Click);
             // 
+            // 清空PToolStripMenuItem
+            // 
+            this.清空PToolStripMenuItem.Name = "清空PToolStripMenuItem";
+            this.清空PToolStripMenuItem.Size = new System.Drawing.Size(72, 27);
+            this.清空PToolStripMenuItem.Text = "清空(&P)";
+            this.清空PToolStripMenuItem.Click += new System.EventHandler(this.清空PToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(128, 27);
+            this.toolStripMenuItem1.Text = "输入查询姓名：";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 27);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(53, 27);
+            this.toolStripMenuItem2.Text = "查找";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
             // 退出QToolStripMenuItem
             // 
             this.退出QToolStripMenuItem.Name = "退出QToolStripMenuItem";
@@ -142,7 +166,7 @@ namespace ShopManagementSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 37);
+            this.label1.Location = new System.Drawing.Point(13, 37);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 15);
@@ -184,7 +208,7 @@ namespace ShopManagementSystem
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(604, 44);
+            this.label5.Location = new System.Drawing.Point(604, 40);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 15);
@@ -193,16 +217,16 @@ namespace ShopManagementSystem
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(682, 37);
+            this.textBox4.Location = new System.Drawing.Point(667, 35);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(132, 25);
+            this.textBox4.Size = new System.Drawing.Size(130, 25);
             this.textBox4.TabIndex = 42;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 123);
+            this.label6.Location = new System.Drawing.Point(12, 213);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 15);
@@ -211,7 +235,7 @@ namespace ShopManagementSystem
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(99, 119);
+            this.textBox5.Location = new System.Drawing.Point(99, 209);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(132, 25);
@@ -227,7 +251,7 @@ namespace ShopManagementSystem
             "收银员",
             "售货员",
             "进货员"});
-            this.comboBox1.Location = new System.Drawing.Point(950, 41);
+            this.comboBox1.Location = new System.Drawing.Point(392, 213);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(132, 23);
@@ -236,7 +260,7 @@ namespace ShopManagementSystem
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(890, 47);
+            this.label11.Location = new System.Drawing.Point(305, 216);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(52, 15);
@@ -246,7 +270,7 @@ namespace ShopManagementSystem
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(604, 200);
+            this.label13.Location = new System.Drawing.Point(604, 139);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(52, 15);
@@ -255,11 +279,11 @@ namespace ShopManagementSystem
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(667, 166);
+            this.textBox12.Location = new System.Drawing.Point(667, 139);
             this.textBox12.Margin = new System.Windows.Forms.Padding(4);
             this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(202, 85);
+            this.textBox12.Size = new System.Drawing.Size(202, 112);
             this.textBox12.TabIndex = 59;
             // 
             // dateTimePicker1
@@ -279,69 +303,6 @@ namespace ShopManagementSystem
             this.label4.Size = new System.Drawing.Size(82, 15);
             this.label4.TabIndex = 39;
             this.label4.Text = "出生日期：";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(302, 206);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 15);
-            this.label9.TabIndex = 51;
-            this.label9.Text = "登录密码：";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(392, 203);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(132, 25);
-            this.textBox8.TabIndex = 52;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(99, 200);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(132, 25);
-            this.textBox9.TabIndex = 50;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(9, 206);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 15);
-            this.label10.TabIndex = 49;
-            this.label10.Text = "登录账号：";
-            // 
-            // 清空PToolStripMenuItem
-            // 
-            this.清空PToolStripMenuItem.Name = "清空PToolStripMenuItem";
-            this.清空PToolStripMenuItem.Size = new System.Drawing.Size(72, 27);
-            this.清空PToolStripMenuItem.Text = "清空(&P)";
-            this.清空PToolStripMenuItem.Click += new System.EventHandler(this.清空PToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(128, 27);
-            this.toolStripMenuItem1.Text = "输入查询姓名：";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // toolStripTextBox1
-            // 
-            this.toolStripTextBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 27);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(53, 27);
-            this.toolStripMenuItem2.Text = "查找";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // dataGridView1
             // 
@@ -371,7 +332,7 @@ namespace ShopManagementSystem
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(392, 113);
+            this.dateTimePicker2.Location = new System.Drawing.Point(392, 136);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(132, 25);
@@ -380,7 +341,7 @@ namespace ShopManagementSystem
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(305, 120);
+            this.label2.Location = new System.Drawing.Point(305, 143);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 15);
@@ -389,7 +350,7 @@ namespace ShopManagementSystem
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(682, 110);
+            this.textBox2.Location = new System.Drawing.Point(99, 136);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(132, 25);
@@ -398,7 +359,7 @@ namespace ShopManagementSystem
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(604, 113);
+            this.label3.Location = new System.Drawing.Point(13, 139);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 15);
@@ -407,9 +368,9 @@ namespace ShopManagementSystem
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(917, 136);
+            this.button1.Location = new System.Drawing.Point(918, 117);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 52);
+            this.button1.Size = new System.Drawing.Size(164, 59);
             this.button1.TabIndex = 66;
             this.button1.Text = "读取选中行数据";
             this.button1.UseVisualStyleBackColor = true;
@@ -430,10 +391,6 @@ namespace ShopManagementSystem
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox4);
@@ -445,6 +402,8 @@ namespace ShopManagementSystem
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "HumanForm";
             this.Text = "人事管理";
@@ -484,10 +443,6 @@ namespace ShopManagementSystem
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ToolStripMenuItem 清空PToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;

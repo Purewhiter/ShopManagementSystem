@@ -30,6 +30,7 @@ namespace ShopManagementSystem
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GoodsListForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.添加商品ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,6 +53,8 @@ namespace ShopManagementSystem
             this.shopDataSet2 = new ShopManagementSystem.ShopDataSet2();
             this.goodsListTableAdapter = new ShopManagementSystem.ShopDataSet2TableAdapters.GoodsListTableAdapter();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.goodsCategoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.goodsCategory = new ShopManagementSystem.GoodsCategory();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -67,16 +70,14 @@ namespace ShopManagementSystem
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.goodsCategory = new ShopManagementSystem.GoodsCategory();
-            this.goodsCategoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.goodsCategoryTableAdapter = new ShopManagementSystem.GoodsCategoryTableAdapters.GoodsCategoryTableAdapter();
             this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodsListBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shopDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.goodsCategory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodsCategoryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.goodsCategory)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -274,6 +275,16 @@ namespace ShopManagementSystem
             this.comboBox1.TabIndex = 83;
             this.comboBox1.ValueMember = "Category";
             // 
+            // goodsCategoryBindingSource
+            // 
+            this.goodsCategoryBindingSource.DataMember = "GoodsCategory";
+            this.goodsCategoryBindingSource.DataSource = this.goodsCategory;
+            // 
+            // goodsCategory
+            // 
+            this.goodsCategory.DataSetName = "GoodsCategory";
+            this.goodsCategory.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(708, 47);
@@ -399,16 +410,6 @@ namespace ShopManagementSystem
             this.label1.TabIndex = 68;
             this.label1.Text = "商品编号：";
             // 
-            // goodsCategory
-            // 
-            this.goodsCategory.DataSetName = "GoodsCategory";
-            this.goodsCategory.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // goodsCategoryBindingSource
-            // 
-            this.goodsCategoryBindingSource.DataMember = "GoodsCategory";
-            this.goodsCategoryBindingSource.DataSource = this.goodsCategory;
-            // 
             // goodsCategoryTableAdapter
             // 
             this.goodsCategoryTableAdapter.ClearBeforeFill = true;
@@ -447,6 +448,8 @@ namespace ShopManagementSystem
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GoodsListForm";
             this.Text = "GoodsListForm";
             this.Load += new System.EventHandler(this.GoodsListForm_Load);
@@ -455,8 +458,8 @@ namespace ShopManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodsListBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shopDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.goodsCategory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodsCategoryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.goodsCategory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

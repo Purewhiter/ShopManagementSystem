@@ -9,6 +9,7 @@ namespace ShopManagementSystem
     static class Program
     {
         public static string LoginID;
+        public static string Post;
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>

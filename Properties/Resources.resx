@@ -121,11 +121,11 @@
   <data name="添加" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\添加.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="库存" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\库存.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="销售" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\销售.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="清单" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\清单.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="分析" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\分析.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,16 +133,22 @@
   <data name="超市" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\超市.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="进货" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\进货.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="退货" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\退货.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="人事管理" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\人事管理.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="进货" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\进货.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="库存" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\库存.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="系统管理" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\系统管理.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="退货" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\退货.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_出境超市" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_出境超市.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

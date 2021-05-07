@@ -29,6 +29,7 @@ namespace ShopManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,6 +39,14 @@ namespace ShopManagementSystem
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -45,6 +54,8 @@ namespace ShopManagementSystem
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -57,7 +68,7 @@ namespace ShopManagementSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 116);
+            this.label1.Location = new System.Drawing.Point(81, 158);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 4;
@@ -66,7 +77,7 @@ namespace ShopManagementSystem
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(172, 116);
+            this.label2.Location = new System.Drawing.Point(270, 161);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 15);
             this.label2.TabIndex = 5;
@@ -75,7 +86,7 @@ namespace ShopManagementSystem
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(306, 116);
+            this.label3.Location = new System.Drawing.Point(469, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 15);
             this.label3.TabIndex = 6;
@@ -84,7 +95,7 @@ namespace ShopManagementSystem
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(424, 117);
+            this.label4.Location = new System.Drawing.Point(660, 155);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 15);
             this.label4.TabIndex = 8;
@@ -93,7 +104,7 @@ namespace ShopManagementSystem
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(556, 116);
+            this.label5.Location = new System.Drawing.Point(469, 327);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 15);
             this.label5.TabIndex = 10;
@@ -104,14 +115,14 @@ namespace ShopManagementSystem
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(678, 118);
+            this.label6.Location = new System.Drawing.Point(660, 327);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 15);
             this.label6.TabIndex = 13;
@@ -120,18 +131,83 @@ namespace ShopManagementSystem
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(48, 250);
+            this.label7.Location = new System.Drawing.Point(81, 327);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 15);
             this.label7.TabIndex = 15;
             this.label7.Text = "退货处理";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(270, 327);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(67, 15);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "商品清单";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel2,
+            this.toolStripStatusLabel3,
+            this.toolStripStatusLabel4});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 404);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(800, 26);
+            this.statusStrip1.TabIndex = 18;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(84, 20);
+            this.toolStripStatusLabel1.Text = "欢迎使用！";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(643, 20);
+            this.toolStripStatusLabel2.Spring = true;
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(45, 20);
+            this.toolStripStatusLabel3.Text = "Time";
+            // 
+            // toolStripStatusLabel4
+            // 
+            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(13, 20);
+            this.toolStripStatusLabel4.Text = " ";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::ShopManagementSystem.Properties.Resources.清单;
+            this.pictureBox8.Location = new System.Drawing.Point(246, 206);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(110, 118);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 16;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            this.pictureBox8.MouseEnter += new System.EventHandler(this.pictureBox8_MouseEnter);
+            this.pictureBox8.MouseLeave += new System.EventHandler(this.pictureBox8_MouseLeave);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ShopManagementSystem.Properties.Resources.退货;
-            this.pictureBox2.Location = new System.Drawing.Point(45, 170);
+            this.pictureBox2.Location = new System.Drawing.Point(46, 206);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(76, 74);
+            this.pictureBox2.Size = new System.Drawing.Size(124, 118);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
@@ -142,9 +218,9 @@ namespace ShopManagementSystem
             // pictureBox7
             // 
             this.pictureBox7.Image = global::ShopManagementSystem.Properties.Resources.系统管理;
-            this.pictureBox7.Location = new System.Drawing.Point(673, 36);
+            this.pictureBox7.Location = new System.Drawing.Point(628, 206);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(77, 74);
+            this.pictureBox7.Size = new System.Drawing.Size(125, 118);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 12;
             this.pictureBox7.TabStop = false;
@@ -155,9 +231,9 @@ namespace ShopManagementSystem
             // pictureBox6
             // 
             this.pictureBox6.Image = global::ShopManagementSystem.Properties.Resources.分析;
-            this.pictureBox6.Location = new System.Drawing.Point(546, 35);
+            this.pictureBox6.Location = new System.Drawing.Point(436, 206);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(77, 74);
+            this.pictureBox6.Size = new System.Drawing.Size(125, 118);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 9;
             this.pictureBox6.TabStop = false;
@@ -168,9 +244,9 @@ namespace ShopManagementSystem
             // pictureBox5
             // 
             this.pictureBox5.Image = global::ShopManagementSystem.Properties.Resources.人事管理;
-            this.pictureBox5.Location = new System.Drawing.Point(427, 35);
+            this.pictureBox5.Location = new System.Drawing.Point(628, 34);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(77, 74);
+            this.pictureBox5.Size = new System.Drawing.Size(125, 118);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 7;
             this.pictureBox5.TabStop = false;
@@ -182,9 +258,9 @@ namespace ShopManagementSystem
             // pictureBox4
             // 
             this.pictureBox4.Image = global::ShopManagementSystem.Properties.Resources.库存;
-            this.pictureBox4.Location = new System.Drawing.Point(165, 29);
+            this.pictureBox4.Location = new System.Drawing.Point(237, 33);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(84, 81);
+            this.pictureBox4.Size = new System.Drawing.Size(132, 125);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
@@ -195,9 +271,9 @@ namespace ShopManagementSystem
             // pictureBox3
             // 
             this.pictureBox3.Image = global::ShopManagementSystem.Properties.Resources.销售;
-            this.pictureBox3.Location = new System.Drawing.Point(296, 33);
+            this.pictureBox3.Location = new System.Drawing.Point(436, 34);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(77, 74);
+            this.pictureBox3.Size = new System.Drawing.Size(125, 118);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -210,7 +286,7 @@ namespace ShopManagementSystem
             this.pictureBox1.Image = global::ShopManagementSystem.Properties.Resources.进货;
             this.pictureBox1.Location = new System.Drawing.Point(45, 33);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(77, 74);
+            this.pictureBox1.Size = new System.Drawing.Size(125, 118);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -223,7 +299,10 @@ namespace ShopManagementSystem
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 430);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label6);
@@ -239,10 +318,15 @@ namespace ShopManagementSystem
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "超市管理系统";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -272,5 +356,13 @@ namespace ShopManagementSystem
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
+        private System.Windows.Forms.Timer timer1;
     }
 }

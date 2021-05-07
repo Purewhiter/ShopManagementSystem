@@ -77,6 +77,11 @@ namespace ShopManagementSystem
             string unit = textBox5.Text;
             string spec = textBox6.Text;
             string price = textBox7.Text;
+            if(textBox1.Text==""|| textBox2.Text == "" || textBox3.Text == "" || comboBox1.Text == "" || textBox5.Text == "" || textBox6.Text == "" || textBox7.Text == "")
+            {
+                MessageBox.Show("请输入完整商品信息！");
+                return;
+            }
             try
             {
                 using (SqlConnection conn = new SqlConnection(DataHandle.connStr))

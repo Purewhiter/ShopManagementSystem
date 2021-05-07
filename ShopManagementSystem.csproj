@@ -74,12 +74,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddItems.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddItems.Designer.cs">
-      <DependentUpon>AddItems.cs</DependentUpon>
-    </Compile>
     <Compile Include="AnalysisForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,12 +81,6 @@
       <DependentUpon>AnalysisForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataHandle.cs" />
-    <Compile Include="DepotForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DepotForm.Designer.cs">
-      <DependentUpon>DepotForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="GoodsCategory.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -201,14 +189,6 @@
     <Compile Include="StockForm.Designer.cs">
       <DependentUpon>StockForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TestDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TestDataSet.xsd</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="AddItems.resx">
-      <DependentUpon>AddItems.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AnalysisForm.resx">
       <DependentUpon>AnalysisForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -353,17 +333,6 @@
       <DependentUpon>ShopDataSet3.xsd</DependentUpon>
     </None>
     <None Include="ShopManagementSystem_TemporaryKey.pfx" />
-    <None Include="TestDataSet.xsc">
-      <DependentUpon>TestDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="TestDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TestDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="TestDataSet.xss">
-      <DependentUpon>TestDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -406,6 +375,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\清单.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_出境超市.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

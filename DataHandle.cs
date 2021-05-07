@@ -46,5 +46,27 @@ namespace ShopManagementSystem
                         ((RadioButton)C).Checked = false;   //清空当前控件的Text属性值
             }
         }
+        public static void Permission()
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(DataHandle.connStr))
+                {
+                    conn.Open();
+                    string sql1 = $"select EmpPost from EmployInfo where UserName='{Program.LoginID}'";
+                    SqlCommand cmd1 = new SqlCommand(sql1, conn);
+                    SqlDataReader dr1 = cmd1.ExecuteReader();
+                    if (dr1.Read())
+                    {
+                        Program.Post = dr1[0].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("连接数据库失败！" + ex.Message);
+            }
+
+        }
     }
 }

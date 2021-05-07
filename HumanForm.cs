@@ -65,6 +65,11 @@ namespace ShopManagementSystem
         }
         private void 修改信息ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "" || textBox2.Text == "" || textBox4.Text == "" || textBox5.Text == "" || comboBox1.Text == "")
+            {
+                MessageBox.Show("请填写完整信息！");
+                return;
+            }
             string name = textBox1.Text;
             string sex = "";
             if (radioButton1.Checked)
@@ -75,8 +80,6 @@ namespace ShopManagementSystem
             string address = textBox4.Text;
             string remark = textBox12.Text;
             string phone = textBox5.Text;
-            string username = textBox9.Text;
-            string password = textBox8.Text;
             string position = comboBox1.Text;
             string hiredate = dateTimePicker2.Value.ToString();
             string birth = dateTimePicker1.Value.ToString();
@@ -120,6 +123,11 @@ namespace ShopManagementSystem
         {
             try
             {
+                if(dataGridView1.SelectedRows.Count==0)
+                {
+                    MessageBox.Show("请选择要删除的一行记录！");
+                    return;
+                }
                 string id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
                 using (SqlConnection conn = new SqlConnection(DataHandle.connStr))
                 {
@@ -172,6 +180,11 @@ namespace ShopManagementSystem
 
         private void 添加员工ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if(textBox1.Text==""|| textBox2.Text == "" || textBox4.Text == "" || textBox5.Text == "" || comboBox1.Text == "")
+            {
+                MessageBox.Show("请填写完整信息！");
+                return;
+            }
             string name = textBox1.Text;
             string sex="";
             if (radioButton1.Checked)
@@ -182,8 +195,8 @@ namespace ShopManagementSystem
             string address= textBox4.Text;
             string remark= textBox12.Text;
             string phone= textBox5.Text;
-            string username= textBox9.Text;
-            string password= textBox8.Text;
+            string username = ID;
+            string password = ID;
             string position = comboBox1.Text;
             string hiredate = dateTimePicker2.Value.ToString();
             string birth = dateTimePicker1.Value.ToString();
