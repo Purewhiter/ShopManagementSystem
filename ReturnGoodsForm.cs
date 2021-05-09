@@ -25,7 +25,7 @@ namespace ShopManagementSystem
                 using (SqlConnection conn = new SqlConnection(DataHandle.connStr))
                 {
                     conn.Open();
-                    string sql = $"select SellNo, Gno, StNo, Gname, SellNum, Unit, GoodsPrice, Discount, SellTime, EmpID, Remark from SellRecord where SellNo='{SellNo}'";
+                    string sql = $"select SellNo, Gno, StNo, Gname, SellNum, Unit, GoodsPrice, Discount, SellTime, EmpID, Remark from SellDetail where SellNo='{SellNo}'";
                     
                     SqlDataAdapter sda = new SqlDataAdapter(sql, conn);
                     dt = new DataTable();

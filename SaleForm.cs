@@ -225,6 +225,11 @@ namespace ShopManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if(dt==null||dt.Rows.Count==0)
+            {
+                MessageBox.Show("信息有误！");
+                return;
+            }
             try
             {
                 using (SqlConnection conn = new SqlConnection(DataHandle.connStr))
@@ -244,6 +249,11 @@ namespace ShopManagementSystem
                             row["StNo"] = dr[0].ToString();
                             row.EndEdit();
                         }
+                        else
+                        {
+                            MessageBox.Show("库存不足！");
+                            return;
+                        }
                     }
 
                     foreach (DataRow row in dt.Rows)
@@ -261,7 +271,21 @@ namespace ShopManagementSystem
                     sda1.Fill(dtNew);
                     SqlCommandBuilder cmdBuilder1 = new SqlCommandBuilder(sda1);
                     foreach (DataRow row in dt.Rows)
-                        dtNew.ImportRow(row);
+                    //dtNew.ImportRow(row);
+                    {
+                        string SellNo = row[0].ToString();
+                        string Gno= row[1].ToString();
+                        string StNo= row[2].ToString();
+                        string SellNum= row[4].ToString();
+                        string Discount= row[7].ToString();
+                        string SellTime= row[8].ToString();
+                        string EmpID= row[9].ToString();
+                        string Remark= row[10].ToString();
+                        string GoodsPrice= row[6].ToString();
+                        string sql4 = $"Insert into SellRecord values('{SellNo}','{Gno}','{StNo}','{GoodsPrice}','{SellNum}',{Discount},'{SellTime}','{EmpID}','{Remark}')";
+                        SqlCommand cmd4 = new SqlCommand(sql4, conn);
+                        cmd4.ExecuteNonQuery();
+                    }
                     sda1.Update(dtNew);
 
                     MessageBox.Show("结算成功！");

@@ -26,19 +26,19 @@ namespace ShopManagementSystem
                 using (SqlConnection conn = new SqlConnection(DataHandle.connStr))
                 {
                     conn.Open();
-                    string sql = $"select SellNo,Gname, SellNum, Unit, GoodsPrice, Discount, SellNum*GoodsPrice*Discount Total, SellTime from SellRecord where SellTime between '{beginTime}' and '{endTime}'";
+                    string sql = $"select SellNo,Gname, SellNum, Unit, GoodsPrice, Discount, SellNum*GoodsPrice*Discount Total, SellTime from SellDetail where SellTime between '{beginTime}' and '{endTime}'";
 
                     SqlDataAdapter sda = new SqlDataAdapter(sql, conn);
                     dt = new DataTable();
                     sda.Fill(dt);
                     dataGridView1.DataSource = dt;
 
-                    string sql1 = $"select sum(SellNum*GoodsPrice*Discount) from SellRecord where SellTime between N'{beginTime}' and N'{endTime}'";
+                    string sql1 = $"select sum(SellNum*GoodsPrice*Discount) from SellDetail where SellTime between N'{beginTime}' and N'{endTime}'";
                     SqlCommand cmd1 = new SqlCommand(sql1, conn);
                     decimal dr1 = decimal.Parse(cmd1.ExecuteScalar().ToString());
                     textBox1.Text = dr1.ToString();
 
-                    string sql2 = $"select sum(SellNum*GoodsPrice*Discount)-sum(SellNum*CostPrice) from SellRecord,StockDetail where SellTime between '{beginTime}' and '{endTime}' and SellRecord.StNo=StockDetail.StNo";
+                    string sql2 = $"select sum(SellNum*GoodsPrice*Discount)-sum(SellNum*CostPrice) from SellDetail,StockDetail where SellTime between '{beginTime}' and '{endTime}' and SellDetail.StNo=StockDetail.StNo";
                     SqlCommand cmd2 = new SqlCommand(sql2, conn);
                     decimal dr2 = decimal.Parse(cmd2.ExecuteScalar().ToString());
                     textBox2.Text = dr2.ToString();
