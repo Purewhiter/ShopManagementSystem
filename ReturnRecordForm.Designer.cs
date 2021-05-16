@@ -54,7 +54,7 @@ namespace ShopManagementSystem
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReturnRecordForm";
-            this.Text = "ReturnRecordForm";
+            this.Text = "退货记录";
             this.Load += new System.EventHandler(this.ReturnRecordForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

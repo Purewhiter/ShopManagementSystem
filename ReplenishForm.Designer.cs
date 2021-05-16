@@ -110,6 +110,7 @@ namespace ShopManagementSystem
             this.replenishGoodsTableAdapter = new ShopManagementSystem.ShopDataSet2TableAdapters.ReplenishGoodsTableAdapter();
             this.replenishDetailTableAdapter = new ShopManagementSystem.ReplenishDetailTableAdapters.ReplenishDetailTableAdapter();
             this.supplierTableAdapter1 = new ShopManagementSystem.ShopDataSet3TableAdapters.SupplierTableAdapter();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shopDataSet2)).BeginInit();
@@ -246,6 +247,7 @@ namespace ShopManagementSystem
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage2.Controls.Add(this.button9);
             this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.button3);
             this.tabPage2.Controls.Add(this.button2);
@@ -281,7 +283,7 @@ namespace ShopManagementSystem
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(522, 317);
+            this.button3.Location = new System.Drawing.Point(551, 285);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(90, 45);
             this.button3.TabIndex = 28;
@@ -291,9 +293,9 @@ namespace ShopManagementSystem
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(670, 316);
+            this.button2.Location = new System.Drawing.Point(551, 359);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 46);
+            this.button2.Size = new System.Drawing.Size(90, 46);
             this.button2.TabIndex = 27;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
@@ -301,7 +303,7 @@ namespace ShopManagementSystem
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(374, 315);
+            this.button1.Location = new System.Drawing.Point(403, 283);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 46);
             this.button1.TabIndex = 26;
@@ -831,6 +833,16 @@ namespace ShopManagementSystem
             // 
             this.supplierTableAdapter1.ClearBeforeFill = true;
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(403, 359);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(90, 46);
+            this.button9.TabIndex = 30;
+            this.button9.Text = "删除";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click_1);
+            // 
             // ReplenishForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -841,7 +853,7 @@ namespace ShopManagementSystem
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReplenishForm";
-            this.Text = "Replenish";
+            this.Text = "进货";
             this.Load += new System.EventHandler(this.ReplenishForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
@@ -950,5 +962,6 @@ namespace ShopManagementSystem
         private ShopDataSet3 shopDataSet3;
         private System.Windows.Forms.BindingSource supplierBindingSource1;
         private ShopDataSet3TableAdapters.SupplierTableAdapter supplierTableAdapter1;
+        private System.Windows.Forms.Button button9;
     }
 }

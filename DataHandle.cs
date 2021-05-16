@@ -13,21 +13,6 @@ namespace ShopManagementSystem
     {
         public SqlConnection conn=null;
         public static string connStr = "Data Source=8.129.32.23;Initial Catalog=Shop;User ID=ShopOwner;Password=shoppassw0rd!;MultipleActiveResultSets=true";
-        public SqlConnection GetConnection()//与数据库建立连接
-        {
-            
-            conn = new SqlConnection(connStr);
-            conn.Open();
-            return conn;
-        }
-        public void CloseConnection()
-        {
-            if (conn.State == ConnectionState.Open)   //判断是否打开与数据库的连接
-            {
-                conn.Close();   //关闭数据库的连接
-                conn.Dispose();   //释放My_con变量的所有空间
-            }
-        }
         public static void ClearControl(Control.ControlCollection Con)
         {
             foreach (Control C in Con)

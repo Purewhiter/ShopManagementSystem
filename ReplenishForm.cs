@@ -460,5 +460,34 @@ namespace ShopManagementSystem
         {
 
         }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            string ID = textBox1.Text;
+            if(textBox1.Text=="")
+            {
+                MessageBox.Show("请输入要删除的供应商ID！");
+                return;
+            }
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(DataHandle.connStr))
+                {
+                    conn.Open();
+                    string sql = $"Delete from Supplier where SpID='{ID}'";
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    if(cmd.ExecuteNonQuery()>0)
+                        MessageBox.Show("删除成功！");
+                    else
+                        MessageBox.Show("删除失败，供应商不存在！");
+                    QueryAllInfo1();
+                    DataHandle.ClearControl(this.Controls);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("删除失败！" + ex.Message);
+            }
+        }
     }
 }

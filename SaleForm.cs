@@ -339,5 +339,19 @@ namespace ShopManagementSystem
                 MessageBox.Show("退货失败！" + ex.Message);
             }
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\r')
+            {
+                button2_Click(this, e);
+                textBox3.Focus();
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

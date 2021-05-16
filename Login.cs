@@ -22,6 +22,16 @@ namespace ShopManagementSystem
             string name = textBox1.Text;
             string pwd = textBox2.Text;
             Program.LoginID = name;
+            if(String.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                MessageBox.Show("请输入用户名！");
+                return;
+            }
+            if (String.IsNullOrWhiteSpace(textBox2.Text))
+            {
+                MessageBox.Show("请输入密码！");
+                return;
+            }
             try
             {
                 using (SqlConnection conn = new SqlConnection(DataHandle.connStr))
@@ -68,6 +78,11 @@ namespace ShopManagementSystem
         {
             if (e.KeyChar == '\r')
                 button1_Click(this, e);
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -195,7 +195,7 @@ namespace ShopManagementSystem
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StockForm";
-            this.Text = "StockForm";
+            this.Text = "库存";
             this.Load += new System.EventHandler(this.StockForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodsNumberBindingSource)).EndInit();

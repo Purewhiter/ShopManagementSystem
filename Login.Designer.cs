@@ -87,6 +87,7 @@ namespace ShopManagementSystem
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(178, 25);
             this.textBox2.TabIndex = 12;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // textBox1
@@ -133,7 +134,7 @@ namespace ShopManagementSystem
             this.label3.Font = new System.Drawing.Font("华文彩云", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(247, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(245, 38);
+            this.label3.Size = new System.Drawing.Size(251, 40);
             this.label3.TabIndex = 18;
             this.label3.Text = "超市管理系统";
             // 
