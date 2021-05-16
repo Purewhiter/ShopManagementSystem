@@ -92,6 +92,7 @@ namespace ShopManagementSystem
             this.textBox3.Size = new System.Drawing.Size(174, 25);
             this.textBox3.TabIndex = 34;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // textBox2
             // 

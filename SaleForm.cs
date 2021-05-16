@@ -353,5 +353,14 @@ namespace ShopManagementSystem
         {
 
         }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\r')
+            {
+                button3_Click(this, e);
+                textBox1.Focus();
+            }
+        }
     }
 }
